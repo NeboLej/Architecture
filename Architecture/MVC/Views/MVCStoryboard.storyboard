@@ -16,9 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cj6-58-9Y9">
-                                <rect key="frame" x="159" y="555" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cj6-58-9Y9">
+                                <rect key="frame" x="20" y="733" width="353" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
@@ -53,12 +52,24 @@
                                     <constraint firstAttribute="bottom" secondItem="1JV-DU-VJs" secondAttribute="bottom" constant="25" id="uLq-w3-eiH"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MVC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btd-WX-EbX">
+                                <rect key="frame" x="0.0" y="89" width="393" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="btd-WX-EbX" secondAttribute="trailing" id="IKS-Iq-ciB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Cj6-58-9Y9" secondAttribute="bottom" constant="50" id="LXM-Ef-mCs"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Cj6-58-9Y9" secondAttribute="trailing" constant="20" id="MhU-b0-7wh"/>
                             <constraint firstItem="lCo-g1-rsH" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="PM3-KQ-a1X"/>
+                            <constraint firstItem="btd-WX-EbX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="bhO-xZ-PtL"/>
                             <constraint firstItem="lCo-g1-rsH" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="235" id="fIf-2p-M8J"/>
+                            <constraint firstItem="btd-WX-EbX" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="v5G-FN-aED"/>
+                            <constraint firstItem="Cj6-58-9Y9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="zRX-od-4TT"/>
                         </constraints>
                     </view>
                     <connections>
@@ -73,8 +84,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
