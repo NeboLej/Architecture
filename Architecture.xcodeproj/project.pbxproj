@@ -15,6 +15,12 @@
 		FA5F5CE22A24E52A005C2AD0 /* MVCController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F5CE12A24E52A005C2AD0 /* MVCController.swift */; };
 		FA5F5CE42A24E581005C2AD0 /* MVCStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5F5CE32A24E581005C2AD0 /* MVCStoryboard.storyboard */; };
 		FA5F5CE62A24E5AF005C2AD0 /* MVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F5CE52A24E5AF005C2AD0 /* MVCModel.swift */; };
+		FA5F5CEC2A24EF2F005C2AD0 /* MVPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F5CEB2A24EF2F005C2AD0 /* MVPModel.swift */; };
+		FA5F5CEE2A24EFAB005C2AD0 /* MVPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F5CED2A24EFAB005C2AD0 /* MVPController.swift */; };
+		FA5F5CF02A24EFCB005C2AD0 /* MVPStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5F5CEF2A24EFCB005C2AD0 /* MVPStoryboard.storyboard */; };
+		FA5F5CF22A24F014005C2AD0 /* MVPViewInputDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F5CF12A24F014005C2AD0 /* MVPViewInputDelegate.swift */; };
+		FA5F5CF42A24F023005C2AD0 /* MVPViewOutputDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F5CF32A24F023005C2AD0 /* MVPViewOutputDelegate.swift */; };
+		FA5F5CF62A24F336005C2AD0 /* MVPPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F5CF52A24F336005C2AD0 /* MVPPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		FA5F5CE12A24E52A005C2AD0 /* MVCController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCController.swift; sourceTree = "<group>"; };
 		FA5F5CE32A24E581005C2AD0 /* MVCStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVCStoryboard.storyboard; sourceTree = "<group>"; };
 		FA5F5CE52A24E5AF005C2AD0 /* MVCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCModel.swift; sourceTree = "<group>"; };
+		FA5F5CEB2A24EF2F005C2AD0 /* MVPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPModel.swift; sourceTree = "<group>"; };
+		FA5F5CED2A24EFAB005C2AD0 /* MVPController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPController.swift; sourceTree = "<group>"; };
+		FA5F5CEF2A24EFCB005C2AD0 /* MVPStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVPStoryboard.storyboard; sourceTree = "<group>"; };
+		FA5F5CF12A24F014005C2AD0 /* MVPViewInputDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPViewInputDelegate.swift; sourceTree = "<group>"; };
+		FA5F5CF32A24F023005C2AD0 /* MVPViewOutputDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPViewOutputDelegate.swift; sourceTree = "<group>"; };
+		FA5F5CF52A24F336005C2AD0 /* MVPPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 		FA5F5CC82A24E2EB005C2AD0 /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
+				FA5F5CE72A24EE5C005C2AD0 /* MVP */,
 				FA5F5CDD2A24E306005C2AD0 /* MVC */,
 				FA5F5CC92A24E2EB005C2AD0 /* AppDelegate.swift */,
 				FA5F5CCB2A24E2EB005C2AD0 /* SceneDelegate.swift */,
@@ -103,6 +116,43 @@
 				FA5F5CE12A24E52A005C2AD0 /* MVCController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FA5F5CE72A24EE5C005C2AD0 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				FA5F5CEA2A24EF15005C2AD0 /* Presenters */,
+				FA5F5CE92A24EF0C005C2AD0 /* Views */,
+				FA5F5CE82A24EF04005C2AD0 /* Models */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		FA5F5CE82A24EF04005C2AD0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA5F5CEB2A24EF2F005C2AD0 /* MVPModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA5F5CE92A24EF0C005C2AD0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA5F5CED2A24EFAB005C2AD0 /* MVPController.swift */,
+				FA5F5CEF2A24EFCB005C2AD0 /* MVPStoryboard.storyboard */,
+				FA5F5CF12A24F014005C2AD0 /* MVPViewInputDelegate.swift */,
+				FA5F5CF32A24F023005C2AD0 /* MVPViewOutputDelegate.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA5F5CEA2A24EF15005C2AD0 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				FA5F5CF52A24F336005C2AD0 /* MVPPresenter.swift */,
+			);
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA5F5CD62A24E2ED005C2AD0 /* LaunchScreen.storyboard in Resources */,
+				FA5F5CF02A24EFCB005C2AD0 /* MVPStoryboard.storyboard in Resources */,
 				FA5F5CD32A24E2ED005C2AD0 /* Assets.xcassets in Resources */,
 				FA5F5CE42A24E581005C2AD0 /* MVCStoryboard.storyboard in Resources */,
 			);
@@ -176,10 +227,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA5F5CF62A24F336005C2AD0 /* MVPPresenter.swift in Sources */,
+				FA5F5CF42A24F023005C2AD0 /* MVPViewOutputDelegate.swift in Sources */,
 				FA5F5CE22A24E52A005C2AD0 /* MVCController.swift in Sources */,
+				FA5F5CEE2A24EFAB005C2AD0 /* MVPController.swift in Sources */,
+				FA5F5CEC2A24EF2F005C2AD0 /* MVPModel.swift in Sources */,
 				FA5F5CE62A24E5AF005C2AD0 /* MVCModel.swift in Sources */,
 				FA5F5CCE2A24E2EB005C2AD0 /* ViewController.swift in Sources */,
 				FA5F5CCA2A24E2EB005C2AD0 /* AppDelegate.swift in Sources */,
+				FA5F5CF22A24F014005C2AD0 /* MVPViewInputDelegate.swift in Sources */,
 				FA5F5CCC2A24E2EB005C2AD0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
      
-        let rootVC = UIStoryboard(name: "MVCStoryboard", bundle: nil).instantiateViewController(withIdentifier: "MVCController") as! MVCController
+        let rootVC = UIStoryboard(name: "MVPStoryboard", bundle: nil).instantiateViewController(withIdentifier: "MVPController") as! MVPController
         let navigationVC = UINavigationController(rootViewController: rootVC)
         window.rootViewController = navigationVC
         self.window = window
